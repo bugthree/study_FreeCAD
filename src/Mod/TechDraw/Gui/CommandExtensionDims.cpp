@@ -168,7 +168,7 @@ CmdTechDrawExtensionInsertSquare::CmdTechDrawExtensionInsertSquare()
 void CmdTechDrawExtensionInsertSquare::activated(int iMsg)
 {
     Q_UNUSED(iMsg);
-    execInsertPrefixChar(this, "□");    //□ white square U+25A1
+    execInsertPrefixChar(this, "[]");    //□ white square U+25A1
 }
 
 bool CmdTechDrawExtensionInsertSquare::isActive()
@@ -272,7 +272,7 @@ void CmdTechDrawExtensionInsertPrefixGroup::activated(int iMsg)
         execInsertPrefixChar(this, "⌀");
         break;
     case 1:                 //insert "□" as prefix
-        execInsertPrefixChar(this, "□");
+        execInsertPrefixChar(this, "[]");
         break;
     case 2:                 //remove prefix characters
         execRemovePrefixChar(this);
